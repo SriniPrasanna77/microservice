@@ -15,6 +15,6 @@ public class LimitsController {
     @GetMapping("/limits")
     public Limits retrieveLimits(){
 //        return new Limits(1,1000);
-        return new Limits(limitConfig.getMinimum(),limitConfig.getMaximum());
+        return new Limits(limitConfig.getMinimum()+1,limitConfig.getMaximum()-11);
     }
 }
